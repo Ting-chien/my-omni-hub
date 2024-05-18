@@ -1,7 +1,5 @@
 import { Flex, Image } from "antd";
 
-import "./index.css";
-
 
 const Home = () => {
     return (
@@ -18,7 +16,7 @@ const Home = () => {
             <Image
                 width={"10rem"}
                 preview={false}
-                src="http://44.239.130.59:5000/images/omnieyes_logo.png"
+                src="./logo.png"
             />
         </Flex>
     )
