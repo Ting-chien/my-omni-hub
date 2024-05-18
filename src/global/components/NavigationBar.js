@@ -1,6 +1,8 @@
 import { Layout, Menu, Image, Space } from "antd";
 import { Link } from "react-router-dom";
 
+import "./NavigationBar.css"
+
 const { Header } = Layout
 
 
@@ -29,7 +31,19 @@ const NavigationBar = () => {
                         },
                         {
                             label: <Link to="/tools">Tools</Link>,
-                            key: "tools"
+                            key: "tools",
+                            children: [
+                                {
+                                    type: "group",
+                                    label: "Item 1",
+                                    children: [
+                                        {
+                                            label: <Link to="/tools/internationalization">Internationalization</Link>,
+                                            key: "internationalization"
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                     ]}
                 />
